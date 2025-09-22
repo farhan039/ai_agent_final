@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+
+# Virtual environments
+venv/
+.venv/
+
+# Logs
+*.log
+
+# VSCode
+.vscode/
+
+# Bytecode
+*.egg-info/
