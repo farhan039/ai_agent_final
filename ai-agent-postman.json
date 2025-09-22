@@ -1,0 +1,54 @@
+{
+  "info": {
+    "name": "AI-Agent API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Interact",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "12345-abcde-67890"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"record_id\": \"12345\",\n  \"inquiry_text\": \"Can you finish this by Friday?\",\n  \"metadata\": {\n    \"priority\": \"high\"\n  }\n}"
+        },
+        "url": {
+          "raw": "http://localhost:4000/interact"
+        }
+      }
+    },
+    {
+      "name": "Handover",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "12345-abcde-67890"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"record_id\": \"12345\",\n  \"reason\": \"commitment_detected\",\n  \"last_message\": \"Yes confirm it\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:4000/handover"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "scenario": "schedule_flow",
+    "conversation": [
+      {
+        "role": "user",
+        "text": "Can you finish this by Friday?",
+        "time": "2025-09-21T10:00:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Yes, that can be scheduled for Friday. Want me to lock it in?",
+        "time": "2025-09-21T10:00:01Z"
+      },
+      {
+        "role": "user",
+        "text": "Please confirm this task",
+        "time": "2025-09-21T10:00:02Z"
+      },
+      {
+        "role": "agent",
+        "text": "Acknowledged. Escalating to a human operator for action.",
+        "time": "2025-09-21T10:00:03Z"
+      }
+    ]
+  },
+  {
+    "scenario": "refund_request",
+    "conversation": [
+      {
+        "role": "user",
+        "text": "I want a refund for my last payment",
+        "time": "2025-09-21T11:00:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Refund requests need special handling. Passing this to our support team now.",
+        "time": "2025-09-21T11:00:01Z"
+      }
+    ]
+  },
+  {
+    "scenario": "clarification_needed",
+    "conversation": [
+      {
+        "role": "user",
+        "text": "I need help",
+        "time": "2025-09-21T12:00:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Thanks for reaching out. Could you tell me more about this?",
+        "time": "2025-09-21T12:00:01Z"
+      }
+    ]
+  },
+  {
+    "scenario": "unrecognized_input",
+    "conversation": [
+      {
+        "role": "user",
+        "text": "Banana",
+        "time": "2025-09-21T13:00:00Z"
+      },
+      {
+        "role": "agent",
+        "text": "Could you share a bit more detail so I can help?",
+        "time": "2025-09-21T13:00:01Z"
+      }
+    ]
+  }
+]

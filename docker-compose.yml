@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  ai-agent:
+    build: .
+    ports:
+      - "4000:4000"
+    environment:
+      - AI_AGENT_KEY=12345-abcde-67890
+      - LOG_LEVEL=debug
